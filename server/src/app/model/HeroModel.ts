@@ -1,11 +1,6 @@
-/**
- * Created by Moiz.Kachwala on 15-06-2016.
- */
-
 import IHeroModel = require('./interfaces/HeroModel');
 
 class HeroModel {
-
     private _heroModel: IHeroModel;
 
     constructor(heroModel: IHeroModel) {
