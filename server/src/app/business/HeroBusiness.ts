@@ -1,12 +1,7 @@
-/**
- * Created by Moiz.Kachwala on 15-06-2016.
- */
-
 import HeroRepository = require("./../repository/HeroRepository");
 import IHeroBusiness = require("./interfaces/HeroBusiness");
 import IHeroModel = require("./../model/interfaces/HeroModel");
 import HeroModel = require("./../model/HeroModel");
-
 
 class HeroBusiness implements IHeroBusiness {
     private _heroRepository: HeroRepository;
@@ -24,7 +19,6 @@ class HeroBusiness implements IHeroBusiness {
     }
 
     update (_id: string, item: IHeroModel, callback: (error: any, result: any) => void) {
-
         this._heroRepository.findById(_id, (err, res) => {
             if(err) callback(err, res);
 

@@ -1,6 +1,6 @@
 import IBookModel = require('./interfaces/IBookModel');
-import IBookRating = require("./interfaces/IBookRating");
-import IBookComment = require("./interfaces/IBookComment");
+import IBookRating = require('./interfaces/IBookRatingModel');
+import IBookComment = require('./interfaces/IBookCommentModel');
 
 class BookModel  {
     private _bookModel: IBookModel;

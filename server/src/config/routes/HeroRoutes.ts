@@ -1,11 +1,8 @@
-/**
- * Created by Moiz.Kachwala on 15-06-2016.
- */
-
 import express = require("express");
 import HeroController = require("./../../controllers/HeroController");
 
 var router = express.Router();
+
 class HeroRoutes {
     private _heroController: HeroController;
 
@@ -23,8 +20,6 @@ class HeroRoutes {
 
         return router;
     }
-
-
 }
 
 Object.seal(HeroRoutes);

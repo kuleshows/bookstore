@@ -1,6 +1,6 @@
 import mongoose = require("mongoose");
-import IBookRating = require("IBookRating");
-import IBookComment = require("IBookComment");
+import IBookRating = require("./IBookRatingModel");
+import IBookComment = require("./IBookCommentModel");
 
 interface IBookModel extends mongoose.Document {
     title: string;

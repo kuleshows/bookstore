@@ -1,16 +1,16 @@
 import express = require("express");
-import HeroBusiness = require("./../app/business/HeroBusiness");
+import BookBusiness = require('./../app/business/BookBusiness');
 import IBaseController = require("./BaseController");
-import IHeroModel = require("./../app/model/interfaces/HeroModel");
+import IBookModel = require('./../app/model/interfaces/IBookModel');
 
-class HeroController implements IBaseController <HeroBusiness> {
+class BookController implements IBaseController<BookBusiness> {
     create(req: express.Request, res: express.Response): void {
         console.log('create request');
 
         try {
-            var hero: IHeroModel = <IHeroModel>req.body;
-            var heroBusiness = new HeroBusiness();
-            heroBusiness.create(hero, (error, result) => {
+            var book: IBookModel = <IBookModel>req.body;
+            var bookBusiness = new BookBusiness();
+            bookBusiness.create(book, (error, result) => {
                 if(error) res.send({"error": "error"});
                 else res.send({"success": "success"});
             });
@@ -23,10 +23,10 @@ class HeroController implements IBaseController <HeroBusiness> {
     }
     update(req: express.Request, res: express.Response): void {
         try {
-            var hero: IHeroModel = <IHeroModel>req.body;
+            var book: IBookModel = <IBookModel>req.body;
             var _id: string = req.params._id;
-            var heroBusiness = new HeroBusiness();
-            heroBusiness.update(_id, hero, (error, result) => {
+            var bookBusiness = new BookBusiness();
+            bookBusiness.update(_id, book, (error, result) => {
                 if(error) res.send({"error": "error"});
                 else res.send({"success": "success"});
             });
@@ -41,8 +41,8 @@ class HeroController implements IBaseController <HeroBusiness> {
         try {
 
             var _id: string = req.params._id;
-            var heroBusiness = new HeroBusiness();
-            heroBusiness.delete(_id, (error, result) => {
+            var bookBusiness = new BookBusiness();
+            bookBusiness.delete(_id, (error, result) => {
                 if(error) res.send({"error": "error"});
                 else res.send({"success": "success"});
             });
@@ -55,9 +55,10 @@ class HeroController implements IBaseController <HeroBusiness> {
     }
     retrieve(req: express.Request, res: express.Response): void {
         try {
+            console.log('lo');
 
-            var heroBusiness = new HeroBusiness();
-            heroBusiness.retrieve((error, result) => {
+            var bookBusiness = new BookBusiness();
+            bookBusiness.retrieve((error, result) => {
                 if(error) res.send({"error": "error"});
                 else res.send(result);
             });
@@ -70,10 +71,9 @@ class HeroController implements IBaseController <HeroBusiness> {
     }
     findById(req: express.Request, res: express.Response): void {
         try {
-
             var _id: string = req.params._id;
-            var heroBusiness = new HeroBusiness();
-            heroBusiness.findById(_id, (error, result) => {
+            var bookBusiness = new BookBusiness();
+            bookBusiness.findById(_id, (error, result) => {
                 if(error) res.send({"error": "error"});
                 else res.send(result);
             });
@@ -81,8 +81,8 @@ class HeroController implements IBaseController <HeroBusiness> {
         catch (e)  {
             console.log(e);
             res.send({"error": "error in your request"});
-
         }
     }
 }
-export = HeroController;
+
+export = BookController;
