@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector:'my-app',
+    selector:'books-app',
     templateUrl: './app/app.html'
 })
 
 export class AppComponent {
-    title = 'Tour of Heroes';
+    title = 'Book store';
 }
