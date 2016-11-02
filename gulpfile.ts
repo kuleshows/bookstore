@@ -23,10 +23,15 @@ gulp.task('clean', (cb) => {
     return del(["dist"], cb);
 });
 
+gulp.task('copy-data', function () {
+    return gulp.src('server/src/**/*.json')
+        .pipe(gulp.dest('dist/server'));
+});
+
 /**
  * Build Express server
  */
-gulp.task('build:server', function () {
+gulp.task('build:server', ["copy-data"], function () {
     var tsProject = tsc.createProject('server/tsconfig.json');
     var tsResult = gulp.src('server/src/**/*.ts')
         .pipe(sourcemaps.init())
@@ -52,9 +57,9 @@ gulp.task('build:client', function () {
 gulp.task('tslint', () => {
     return gulp.src("client/app/**/*.ts")
         .pipe(tslint({
-			formatter: "prose"
-		}))
-		.pipe(tslint.report());
+            formatter: "prose"
+        }))
+        .pipe(tslint.report());
 });
 
 
@@ -96,7 +101,7 @@ gulp.task("libs", () => {
         'reflect-metadata/Reflect.js',
         'reflect-metadata/Reflect.js.map',
         'systemjs/dist/system.src.js'
-    ], { cwd: "node_modules/**" }) /* Glob required here. */
+    ], {cwd: "node_modules/**"}) /* Glob required here. */
         .pipe(gulp.dest("dist/client/libs"));
 });
 
@@ -106,7 +111,7 @@ gulp.task("libs", () => {
 gulp.task("css", () => {
     return gulp.src([
         'bootstrap/dist/**/**'
-    ], { cwd: "node_modules/**" }) /* Glob required here. */
+    ], {cwd: "node_modules/**"}) /* Glob required here. */
         .pipe(gulp.dest("dist/client/css"));
 });
 
