@@ -15,6 +15,10 @@ import {BookDetailComponent} from './components/bookDetail/book-detail.component
 import {SliderComponent} from './components/slider/slider.component';
 import {SiteHeaderComponent} from './components/siteHeader/site-header.component';
 import {SiteFooterComponent} from './components/siteFooter/site-footer.component';
+import {LeftSidebarComponent} from './components/leftSidebar/left-sidebar.component';
+import {FeaturedItemsComponent} from './components/featuredItems/featured-items.component';
+import {RecommendedItemsComponent} from './components/recommendedItems/recommended-items.component';
+import {CategoryTabComponent} from './components/categoryTab/category-tab.component';
 
 import {HeroService}  from './services/hero.service';
 import {BookService}  from './services/book.service';
@@ -35,7 +39,11 @@ import {BookService}  from './services/book.service';
         BookDetailComponent,
         SliderComponent,
         SiteHeaderComponent,
-        SiteFooterComponent
+        SiteFooterComponent,
+        LeftSidebarComponent,
+        FeaturedItemsComponent,
+        RecommendedItemsComponent,
+        CategoryTabComponent
     ],
     providers: [
         HeroService,
