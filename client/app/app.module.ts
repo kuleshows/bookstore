@@ -12,6 +12,7 @@ import {HeroDetailComponent}  from './components/heroDetail/hero-detail.componen
 
 import {BooksComponent} from './components/books/books.component';
 import {BookDetailComponent} from './components/bookDetail/book-detail.component';
+import {BookSliderComponent} from './components/bookSlider/book-slider.component';
 
 import {HeroService}  from './services/hero.service';
 import {BookService}  from './services/book.service';
@@ -29,7 +30,8 @@ import {BookService}  from './services/book.service';
         DashboardComponent,
         HeroDetailComponent,
         BooksComponent,
-        BookDetailComponent
+        BookDetailComponent,
+        BookSliderComponent
     ],
     providers: [
         HeroService,
