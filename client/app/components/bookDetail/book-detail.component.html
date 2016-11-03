@@ -1,9 +1,13 @@
 <div class="product-image-wrapper" *ngIf="book">
     <div class="single-products">
         <div class="productinfo text-center">
-            <img [src]="book.mainImageUrl" alt="" width="100" />
+            <img [src]="book.imageUrls[0]" [alt]="book.title" />
             <h2>$56</h2>
-            <p>{{book.title}}</p>
+            <p>
+                <a class="book-details-link" href="google.com">{{book.title}}</a>
+            </p>
+            <p>by {{book.author}}</p>
+            <p>{{book.releaseYear}}</p>
             <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
         </div>
         <!--<div class="product-overlay">-->
