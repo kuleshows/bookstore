@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, OnChanges} from '@angular/core';
 import { Router } from '@angular/router';
 
 import {Book} from "../../models/book";
@@ -6,10 +6,10 @@ import {BookService} from "../../services/book.service";
 
 @Component({
     selector: 'books',
-    templateUrl: './books.component.html'
+    templateUrl: './app/components/books/books.component.html'
 })
 export class BooksComponent implements OnInit {
-    books: Book[] = [];
+    books: Book[];
 
     constructor(
         private router: Router,
@@ -21,8 +21,4 @@ export class BooksComponent implements OnInit {
             .then(books => this.books = books);
     }
 
-    gotoDetail(book: Book) {
-        let link = ['/detail', book._id];
-        this.router.navigate(link);
-    }
 }
