@@ -12,6 +12,7 @@ interface IBookModel extends mongoose.Document {
     isbn: string;
     ratings: IBookRating[];
     comments: IBookComment[];
+    imageUrls: string[];
 }
 
 export = IBookModel;

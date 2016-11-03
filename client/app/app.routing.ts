@@ -8,7 +8,7 @@ import { BooksComponent }      from './components/books/books.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/books',
+    redirectTo: '/dashboard',
     pathMatch: 'full'
   },
   {

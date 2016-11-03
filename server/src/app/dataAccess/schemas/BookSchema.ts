@@ -35,7 +35,11 @@ class BookSchema {
             },
             comments: {
                 type: [],
-                require: false
+                required: false
+            },
+            imageUrls: {
+                type: [String],
+                required: false
             }
         });
 

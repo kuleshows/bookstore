@@ -7,7 +7,8 @@
       "author": "Viet Thanh Nguyen",
       "language": "en",
       "genres": ["black comedy"],
-      "isbn": "0802124941"
+      "isbn": "0802124941",
+      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/518LdNuHDJL._SX331_BO1,204,203,200_.jpg"]
     },
     {
       "title": "Hamilton: The Revolution",
@@ -16,7 +17,8 @@
       "author": "Lin-Manuel Miranda",
       "language": "en",
       "genres": ["historical"],
-      "isbn": "1455539740"
+      "isbn": "1455539740",
+      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/519V%2BmsUN3L._SX447_BO1,204,203,200_.jpg"]
     },
     {
       "title": "Custer's Trials: A Life on the Frontier of a New America",
@@ -25,7 +27,8 @@
       "author": ".J. Stiles ",
       "language": "en",
       "genres": ["biography"],
-      "isbn": "0307592642"
+      "isbn": "0307592642",
+      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/51JYkx8d8OL._SX333_BO1,204,203,200_.jpg"]
     },
     {
       "title": "Barbarian Days: A Surfing Life",
@@ -34,7 +37,8 @@
       "author": "William Finnegan",
       "language": "en",
       "genres": ["sports & outdoors"],
-      "isbn": "1594203474"
+      "isbn": "1594203474",
+      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/51IxXaOnirL._SX324_BO1,204,203,200_.jpg"]
     }
   ]
 }

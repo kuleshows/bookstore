@@ -1,30 +1,28 @@
 import {Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
-
-import {Hero} from "../../models/hero";
-import {HeroService} from "../../services/hero.service";
+import {Book} from "../../models/book";
+import {BookService} from "../../services/book.service";
 
 @Component({
     selector: 'my-dashboard',
-    templateUrl: './app/components/dashboard/dashboard.component.html',
-    styleUrls: ['./app/components/dashboard/dashboard.component.css']
+    templateUrl: './app/components/dashboard/dashboard.component.html'
 })
 
 export class DashboardComponent implements OnInit {
-    heroes: Hero[] = [];
+    books: Book[] = [];
 
     constructor(
         private router: Router,
-        private heroService: HeroService) {
+        private bookService: BookService) {
     }
 
     ngOnInit() {
-        this.heroService.getHeroes()
-            .then(heroes => this.heroes = heroes);
+        this.bookService.getBooks()
+            .then(books => this.books = books);
     }
 
-    gotoDetail(hero: Hero) {
-        let link = ['/detail', hero._id];
+    gotoDetail(book: Book) {
+        let link = ['/detail', book._id];
         this.router.navigate(link);
     }
 }

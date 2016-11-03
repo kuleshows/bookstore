@@ -40,6 +40,10 @@ class BookModel  {
     get comments(): IBookComment[] {
         return this._bookModel.comments;
     }
+
+    get imageUrls(): string[] {
+        return this._bookModel.imageUrls;
+    }
 }
 
 export = BookModel;
