@@ -6,11 +6,8 @@ import {HttpModule}     from '@angular/http';
 import {AppComponent}  from './app.component';
 import {routing}       from './app.routing';
 
-import {HeroesComponent}      from './components/heroes/heroes.component';
 import {DashboardComponent}   from './components/dashboard/dashboard.component';
-import {HeroDetailComponent}  from './components/heroDetail/hero-detail.component';
 
-import {BooksComponent} from './components/books/books.component';
 import {BookDetailComponent} from './components/bookDetail/book-detail.component';
 import {SliderComponent} from './components/slider/slider.component';
 import {SiteHeaderComponent} from './components/siteHeader/site-header.component';
@@ -20,7 +17,6 @@ import {FeaturedItemsComponent} from './components/featuredItems/featured-items.
 import {RecommendedItemsComponent} from './components/recommendedItems/recommended-items.component';
 import {CategoryTabComponent} from './components/categoryTab/category-tab.component';
 
-import {HeroService}  from './services/hero.service';
 import {BookService}  from './services/book.service';
 
 @NgModule({
@@ -32,10 +28,7 @@ import {BookService}  from './services/book.service';
     ],
     declarations: [
         AppComponent,
-        HeroesComponent,
         DashboardComponent,
-        HeroDetailComponent,
-        BooksComponent,
         BookDetailComponent,
         SliderComponent,
         SiteHeaderComponent,
@@ -46,7 +39,6 @@ import {BookService}  from './services/book.service';
         CategoryTabComponent
     ],
     providers: [
-        HeroService,
         BookService
     ],
     bootstrap: [AppComponent]

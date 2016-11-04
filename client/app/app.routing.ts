@@ -1,9 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent }   from './components/dashboard/dashboard.component';
-import { HeroesComponent }      from './components/heroes/heroes.component';
-import { HeroDetailComponent }  from './components/heroDetail/hero-detail.component';
-import { BooksComponent }      from './components/books/books.component';
 
 const appRoutes: Routes = [
   {
@@ -14,18 +11,6 @@ const appRoutes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
-  },
-  {
-    path: 'detail/:id',
-    component: HeroDetailComponent
-  },
-  {
-    path: 'heroes',
-    component: HeroesComponent
-  },
-  {
-    path: 'books',
-    component: BooksComponent
   }
 ];
 
