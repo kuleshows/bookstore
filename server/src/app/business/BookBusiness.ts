@@ -1,7 +1,6 @@
 import IBookBusiness = require('./interfaces/IBookBusiness');
 import IBookModel = require('./../model/interfaces/IBookModel');
 import BookModel = require('./../model/BookModel');
-import IBookRepository = require('./../repository/BookRepository');
 import BookRepository = require("../repository/BookRepository");
 
 class BookBusiness implements IBookBusiness {

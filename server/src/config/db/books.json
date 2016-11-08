@@ -16,7 +16,7 @@
       "releaseYear": 2016,
       "author": "Lin-Manuel Miranda",
       "language": "en",
-      "genres": ["historical"],
+      "genres": ["historical", "biography"],
       "isbn": "1455539740",
       "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/519V%2BmsUN3L._SX447_BO1,204,203,200_.jpg"]
     },
@@ -39,6 +39,37 @@
       "genres": ["sports & outdoors"],
       "isbn": "1594203474",
       "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/51IxXaOnirL._SX324_BO1,204,203,200_.jpg"]
+    },
+    {
+      "title": "StrengthsFinder 2.0",
+      "annotation": "<p>Do you have the opportunity to do what you do best every day?</p><p>Chances are, you don't. All too often, our natural talents go untapped. From the cradle to the cubicle, we devote more time to fixing our shortcomings than to developing our strengths.</p><p>To help people uncover their talents, Gallup introduced the first version of its online assessment</p>",
+      "releaseYear": 2007,
+      "author": "Tom Rath",
+      "language": "en",
+      "genres": ["business & money"],
+      "isbn": "9781595620156",
+      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/41EII0L2ciL._SX360_BO1,204,203,200_.jpg"]
+    },
+    {
+      "title": "Who Moved My Cheese?: An Amazing Way to Deal with Change in Your Work and in Your Life",
+      "annotation": "<p>Do you have the opportunity to do what you do best every day?</p><p>Chances are, you don't. All too often, our natural talents go untapped. From the cradle to the cubicle, we devote more time to fixing our shortcomings than to developing our strengths.</p><p>To help people uncover their talents, Gallup introduced the first version of its online assessment</p>",
+      "releaseYear": 1998,
+      "author": "Spencer Johnson",
+      "language": "en",
+      "genres": ["business & money"],
+      "isbn": "0399144463",
+      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/51fFDEkUyEL._SX321_BO1,204,203,200_.jpg"]
+    },
+    {
+      "title": "Good to Great: Why Some Companies Make the Leap and Others Don't ",
+      "annotation": "<p>The Challenge:Built to Last, the defining management study of the nineties, showed how great companies triumph over time and how long-term sustained performance can be engineered into the DNA of an enterprise from the verybeginning.</p>",
+      "releaseYear": 2001,
+      "author": "Jim Collins",
+      "language": "en",
+      "genres": ["business & money"],
+      "isbn": "0066620996",
+      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/41EV9hbgbCL._SX327_BO1,204,203,200_.jpg"]
     }
+
   ]
 }

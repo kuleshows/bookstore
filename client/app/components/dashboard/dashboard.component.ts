@@ -1,7 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import { Router } from '@angular/router';
+import {Router} from '@angular/router';
 import {Book} from "../../models/book";
 import {BookService} from "../../services/book.service";
+import {Category} from "../../models/category";
+import {FeaturedBooksService} from "../../services/featuredBooks.service";
+
 
 @Component({
     selector: 'my-dashboard',
@@ -10,15 +13,38 @@ import {BookService} from "../../services/book.service";
 
 export class DashboardComponent implements OnInit {
     books: Book[] = [];
+    categories: Category[] = [];
+    featuredBooks: Book[] = [];
 
-    constructor(
-        private router: Router,
-        private bookService: BookService) {
+    constructor(private router: Router,
+                private bookService: BookService,
+                private featuredBooksService: FeaturedBooksService) {
     }
 
     ngOnInit() {
         this.bookService.getBooks()
-            .then(books => this.books = books);
+            .then(books => {
+                this.books = books;
+
+                var categoriesArray = [].concat.apply([], books.map(b => b.genres));
+
+                this.categories = categoriesArray.filter((v, i, a) => a.indexOf(v) === i) // distinct
+                    .map(name =>
+                        new Category(name,
+                            this.getCategoryLink(name),
+                            books.filter(b => b.genres.indexOf(name) > -1).length));
+
+                var featuredBookIds = this.featuredBooksService.getBooks()
+                    .then(featuredBooks => {
+                        this.featuredBooks = books.filter(b => featuredBooks.indexOf(b._id) > -1);
+                    })
+
+
+            });
+    }
+
+    getCategoryLink(categoryName) {
+        return `?c=${encodeURIComponent(categoryName)}`;
     }
 
     gotoDetail(book: Book) {

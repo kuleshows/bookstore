@@ -18,6 +18,8 @@ import {RecommendedItemsComponent} from './components/recommendedItems/recommend
 import {CategoryTabComponent} from './components/categoryTab/category-tab.component';
 
 import {BookService}  from './services/book.service';
+import {CategoryMenuItemComponent} from "./components/categoryMenuItem/category-menu-item.component";
+import {FeaturedBookService} from "./services/featuredBooks.service";
 
 @NgModule({
     imports: [
@@ -36,10 +38,12 @@ import {BookService}  from './services/book.service';
         LeftSidebarComponent,
         FeaturedItemsComponent,
         RecommendedItemsComponent,
-        CategoryTabComponent
+        CategoryTabComponent,
+        CategoryMenuItemComponent
     ],
     providers: [
-        BookService
+        BookService,
+        FeaturedBookService
     ],
     bootstrap: [AppComponent]
 })
