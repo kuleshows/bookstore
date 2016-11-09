@@ -5,7 +5,6 @@ import {BookService} from "../../services/book.service";
 import {Category} from "../../models/category";
 import {FeaturedBooksService} from "../../services/featuredBooks.service";
 
-
 @Component({
     selector: 'my-dashboard',
     templateUrl: './app/components/dashboard/dashboard.component.html'
@@ -33,13 +32,10 @@ export class DashboardComponent implements OnInit {
                         new Category(name,
                             this.getCategoryLink(name),
                             books.filter(b => b.genres.indexOf(name) > -1).length));
-
-                // var featuredBookIds = this.featuredBooksService.getBooks()
-                //     .then(featuredBooks => {
-                //         this.featuredBooks = books.filter(b => featuredBooks.indexOf(b._id) > -1);
-                //     })
-
-
+            });
+        this.featuredBooksService.getBooks(new Date())
+            .then(books => {
+                this.featuredBooks = books;
             });
     }
 
