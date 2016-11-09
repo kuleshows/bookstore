@@ -34,10 +34,10 @@ export class DashboardComponent implements OnInit {
                             this.getCategoryLink(name),
                             books.filter(b => b.genres.indexOf(name) > -1).length));
 
-                var featuredBookIds = this.featuredBooksService.getBooks()
-                    .then(featuredBooks => {
-                        this.featuredBooks = books.filter(b => featuredBooks.indexOf(b._id) > -1);
-                    })
+                // var featuredBookIds = this.featuredBooksService.getBooks()
+                //     .then(featuredBooks => {
+                //         this.featuredBooks = books.filter(b => featuredBooks.indexOf(b._id) > -1);
+                //     })
 
 
             });

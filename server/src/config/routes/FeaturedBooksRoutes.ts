@@ -11,10 +11,7 @@ class FeaturedBookRoutes {
     }
     get routes () {
         var controller = this._featuredBooksController;
-
-        router.get("/featuredbooks", controller.retrieve);
-        router.get("/featuredbooks/:_id", controller.findById);
-
+        router.get("/featuredbooks/:_date", controller.retrieve);
         return router;
     }
 }

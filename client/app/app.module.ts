@@ -19,7 +19,7 @@ import {CategoryTabComponent} from './components/categoryTab/category-tab.compon
 
 import {BookService}  from './services/book.service';
 import {CategoryMenuItemComponent} from "./components/categoryMenuItem/category-menu-item.component";
-import {FeaturedBookService} from "./services/featuredBooks.service";
+import {FeaturedBooksService} from "./services/featuredBooks.service";
 
 @NgModule({
     imports: [
@@ -43,7 +43,7 @@ import {FeaturedBookService} from "./services/featuredBooks.service";
     ],
     providers: [
         BookService,
-        FeaturedBookService
+        FeaturedBooksService
     ],
     bootstrap: [AppComponent]
 })

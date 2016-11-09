@@ -14,8 +14,8 @@ class BookBusiness implements IBookBusiness {
         this._bookRepository.create(item, callback);
     }
 
-    retrieve(callback: (error: any, result: any) => void) {
-        this._bookRepository.retrieve(callback);
+    retrieve(predicate: any, callback: (error: any, result: any) => void) {
+        this._bookRepository.retrieve(predicate, callback);
     }
 
     update(_id: string, item: IBookModel, callback: (error: any, result: any) => void) {

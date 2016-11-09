@@ -6,6 +6,8 @@ import BookBusiness = require('./../../app/business/BookBusiness');
 import IFeaturedBooksModel = require('./../../app/model/interfaces/IFeaturedBooksModel');
 import fs = require('fs');
 import {MathHelper} from "../../app/business/common/MathHelper";
+import moment = require("moment");
+import {DateHelper} from "../../app/business/common/DateHelper";
 
 export class Seeder {
     private daysCount = 10;
@@ -24,10 +26,10 @@ export class Seeder {
         var featuredBooksBusiness = new FeaturedBookBusiness();
         var bookBusiness = new BookBusiness();
 
-        var books = bookBusiness.retrieve((error, books) => {
+        var books = bookBusiness.retrieve({}, (error, books) => {
             var booksTotal = books.length;
 
-            var featuredDate = new Date();
+            var featuredDate = moment.utc().toDate();
 
             for (var i = 0; i < this.daysCount; i++) {
                 var booksCount = MathHelper.nextIntRandomInRange(this.minBooks, this.maxBooks);
@@ -52,7 +54,7 @@ export class Seeder {
                     }
                 });
 
-                featuredDate.setDate(featuredDate.getDate() + 1);
+                featuredDate = DateHelper.addDays(featuredDate, 1);
             }
         });
     }

@@ -8,7 +8,7 @@ class FeaturedBooksSchema {
     static get schema() {
         var schema = mongoose.Schema({
             date: {
-                type: String,
+                type: Date,
                 required: true
             },
             books: [{type: mongoose.Schema.Types.ObjectId, ref: 'Books'}]

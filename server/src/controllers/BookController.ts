@@ -58,7 +58,7 @@ class BookController implements IBaseController<BookBusiness> {
             console.log('lo');
 
             var bookBusiness = new BookBusiness();
-            bookBusiness.retrieve((error, result) => {
+            bookBusiness.retrieve({}, (error, result) => {
                 if(error) res.send({"error": "error"});
                 else res.send(result);
             });

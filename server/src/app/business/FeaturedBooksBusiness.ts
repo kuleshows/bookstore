@@ -14,8 +14,8 @@ class FeaturedBooksBusiness implements IFeaturedBooksBusiness {
         this._featuredBooksRepository.create(item, callback);
     }
 
-    retrieve(callback: (error: any, result: any) => void) {
-        this._featuredBooksRepository.retrieve(callback);
+    retrieve(predicate: any, callback: (error: any, result: any) => void) {
+        this._featuredBooksRepository.retrieve(predicate, callback);
     }
 
 
