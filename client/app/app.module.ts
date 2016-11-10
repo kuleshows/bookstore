@@ -23,6 +23,7 @@ import {CategoryMenuItemComponent} from "./components/categoryMenuItem/category-
 import {FeaturedBooksService} from "./services/featuredBooks.service";
 
 import {RemoveHostDirective} from './directives/remove-host.directive';
+import {BookDetailPageComponent} from "./components/bookDetailPage/book-detail-page.component";
 
 @NgModule({
     imports: [
@@ -44,7 +45,8 @@ import {RemoveHostDirective} from './directives/remove-host.directive';
         CategoryTabComponent,
         CategoryMenuItemComponent,
         SliderItemComponent,
-        RemoveHostDirective
+        RemoveHostDirective,
+        BookDetailPageComponent
     ],
     providers: [
         BookService,
