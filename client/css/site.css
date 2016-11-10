@@ -1,0 +1,12 @@
+.carousel.slide img {
+    height: 300px;
+}
+
+.slider-annotation {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.slider-details {
+    height: 420px;
+}

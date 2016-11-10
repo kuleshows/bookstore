@@ -1,10 +1,13 @@
 <div class="item" [ngClass]="isActive ? 'active' : ''">
-    <div class="col-sm-6">
-        <h2>{{book.title}}</h2>
-        {{book.annotation}}
+    <div class="col-sm-6 slider-details">
+        <h2>
+            {{book.title}}
+            <small><br/>by {{book.author}}</small>
+        </h2>
+        <div class="slider-annotation" [innerHTML]="book.annotation"></div>
         <button type="button" class="btn btn-default get">Get it now</button>
     </div>
-    <div class="col-sm-6">
-        <img [src]="book.imageUrls[0]" class="img-responsive" alt=""/>
+    <div class="col-sm-6 text-center">
+        <img [src]="book.imageUrls[0]" [alt]="book.title"/>
     </div>
 </div>

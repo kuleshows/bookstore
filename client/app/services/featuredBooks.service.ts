@@ -10,7 +10,7 @@ export class FeaturedBooksService {
     constructor(private http: Http) {}
 
     getBooks(date: Date): Promise<Book[]> {
-        return this.http.get(`${this.featuredBooksUrl}/2016-11-09`)
+        return this.http.get(`${this.featuredBooksUrl}/2016-11-10`)
             .toPromise()
             .then(response => response.json())
             .catch(this.handleError);

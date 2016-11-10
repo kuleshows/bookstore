@@ -15,7 +15,8 @@
                         <slider-item
                                 *ngFor="let book of items; let i = index;"
                                 [isActive]="i === 0"
-                                [book]="book"></slider-item>
+                                [book]="book"
+                                remove-host></slider-item>
                     </div>
 
                     <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">

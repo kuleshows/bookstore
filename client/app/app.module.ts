@@ -22,6 +22,8 @@ import {BookService}  from './services/book.service';
 import {CategoryMenuItemComponent} from "./components/categoryMenuItem/category-menu-item.component";
 import {FeaturedBooksService} from "./services/featuredBooks.service";
 
+import {RemoveHostDirective} from './directives/remove-host.directive';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -41,7 +43,8 @@ import {FeaturedBooksService} from "./services/featuredBooks.service";
         RecommendedItemsComponent,
         CategoryTabComponent,
         CategoryMenuItemComponent,
-        SliderItemComponent
+        SliderItemComponent,
+        RemoveHostDirective
     ],
     providers: [
         BookService,
