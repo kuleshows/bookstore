@@ -1,7 +1,5 @@
 import DataAccess = require('./../DataAccess');
 import IBookModel = require('./../../model/interfaces/IBookModel');
-// import IBookRatingModel = require('./../../model/interfaces/IBookRatingModel');
-// import IBookCommentModel = require('./../../model/interfaces/IBookCommentModel');
 
 var mongoose = DataAccess.mongooseInstance;
 var mongooseConnection = DataAccess.mongooseConnection;
@@ -27,10 +25,6 @@ class BookSchema {
             },
             genres: {
                 type: [String],
-                required: false
-            },
-            ratings: {
-                type: [],
                 required: false
             },
             comments: {

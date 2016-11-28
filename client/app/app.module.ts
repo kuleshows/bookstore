@@ -24,6 +24,7 @@ import {FeaturedBooksService} from "./services/featuredBooks.service";
 
 import {RemoveHostDirective} from './directives/remove-host.directive';
 import {BookDetailPageComponent} from "./components/bookDetailPage/book-detail-page.component";
+import {BookImagesComponent} from './components/bookImages/book-images-component';
 
 @NgModule({
     imports: [
@@ -46,7 +47,8 @@ import {BookDetailPageComponent} from "./components/bookDetailPage/book-detail-p
         CategoryMenuItemComponent,
         SliderItemComponent,
         RemoveHostDirective,
-        BookDetailPageComponent
+        BookDetailPageComponent,
+        BookImagesComponent
     ],
     providers: [
         BookService,

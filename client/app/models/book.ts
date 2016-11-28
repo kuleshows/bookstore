@@ -1,3 +1,5 @@
+import {Comment} from "./comment";
+
 export class Book {
     _id: string;
     title: string;
@@ -8,6 +10,7 @@ export class Book {
     genres: string[];
     isbn: string;
     imageUrls: string[];
+    comments: Comment[];
 
     get mainImageUrl(): string {
         console.log(this.imageUrls);
