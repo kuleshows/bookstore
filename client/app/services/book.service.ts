@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {Headers, Http, Response} from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import {Book} from './../models/book';
+import {Comment} from "../models/comment";
 
 @Injectable()
 export class BookService {

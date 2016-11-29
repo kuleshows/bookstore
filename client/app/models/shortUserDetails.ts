@@ -1,4 +1,5 @@
 export class ShortUserDetails {
-    name: string;
-    profileUrl: string;
+    constructor(public name: string,
+                public profileUrl: string) {
+    }
 }
