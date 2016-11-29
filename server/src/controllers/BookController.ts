@@ -55,8 +55,6 @@ class BookController implements IBaseController<BookBusiness> {
     }
     retrieve(req: express.Request, res: express.Response): void {
         try {
-            console.log('lo');
-
             var bookBusiness = new BookBusiness();
             bookBusiness.retrieve({}, (error, result) => {
                 if(error) res.send({"error": "error"});

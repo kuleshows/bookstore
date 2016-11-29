@@ -12,7 +12,7 @@ export class FeaturedBooksService {
     constructor(private http: Http) {}
 
     getBooks(date: Date): Promise<Book[]> {
-        return this.http.get(`${this.featuredBooksUrl}/${moment(date).add(-10, 'days').format('YYYY-MM-DD')}`)
+        return this.http.get(`${this.featuredBooksUrl}/${moment(date).format('YYYY-MM-DD')}`)
             .toPromise()
             .then(response => response.json())
             .catch(this.handleError);

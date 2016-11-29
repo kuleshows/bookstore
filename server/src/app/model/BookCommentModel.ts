@@ -1,24 +1,24 @@
-import IBookCommentModel = require('./interfaces/IBookCommentModel');
+import IBookReviewModel = require('./interfaces/IBookReviewModel');
 import IShortUserDetails = require('./interfaces/IShortUserDetailsModel');
 
-class BookCommentModel {
-    private _bookCommentModel: IBookCommentModel;
+class BookReviewModel {
+    private _bookReviewModel: IBookReviewModel;
 
-    constructor(bookCommentModel: IBookCommentModel) {
-        this._bookCommentModel = bookCommentModel;
+    constructor(bookReviewModel: IBookReviewModel) {
+        this._bookReviewModel = bookReviewModel;
     }
     get text (): string {
-        return this._bookCommentModel.text;
+        return this._bookReviewModel.text;
     }
 
     get user (): IShortUserDetails {
-        return this._bookCommentModel.user;
+        return this._bookReviewModel.user;
     }
 
     get timeStamp (): Date {
-        return this._bookCommentModel.timeStamp;
+        return this._bookReviewModel.timeStamp;
     }
 
 }
-Object.seal(BookCommentModel);
-export =  BookCommentModel;
+Object.seal(BookReviewModel);
+export =  BookReviewModel;

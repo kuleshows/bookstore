@@ -1,0 +1,16 @@
+<div id="similar-product" *ngIf="book.imageUrls.length > 1" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="" *ngFor="let imageUrl of book.imageUrls.slice(1);">
+                <img [src]="imageUrl" alt="">
+            </a>
+        </div>
+    </div>
+
+    <a class="left item-control" href="#similar-product" data-slide="prev">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="right item-control" href="#similar-product" data-slide="next">
+        <i class="fa fa-angle-right"></i>
+    </a>
+</div>

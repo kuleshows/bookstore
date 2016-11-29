@@ -6,9 +6,13 @@
       "releaseYear": 2016,
       "author": "Viet Thanh Nguyen",
       "language": "en",
-      "genres": ["black comedy"],
+      "genres": [
+        "black comedy"
+      ],
       "isbn": "0802124941",
-      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/518LdNuHDJL._SX331_BO1,204,203,200_.jpg"]
+      "imageUrls": [
+        "https://images-na.ssl-images-amazon.com/images/I/518LdNuHDJL._SX331_BO1,204,203,200_.jpg"
+      ]
     },
     {
       "title": "Hamilton: The Revolution",
@@ -16,9 +20,14 @@
       "releaseYear": 2016,
       "author": "Lin-Manuel Miranda",
       "language": "en",
-      "genres": ["historical", "biography"],
+      "genres": [
+        "historical",
+        "biography"
+      ],
       "isbn": "1455539740",
-      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/519V%2BmsUN3L._SX447_BO1,204,203,200_.jpg"]
+      "imageUrls": [
+        "https://images-na.ssl-images-amazon.com/images/I/519V%2BmsUN3L._SX447_BO1,204,203,200_.jpg"
+      ]
     },
     {
       "title": "Custer's Trials: A Life on the Frontier of a New America",
@@ -26,9 +35,33 @@
       "releaseYear": 2016,
       "author": ".J. Stiles ",
       "language": "en",
-      "genres": ["biography"],
+      "genres": [
+        "biography"
+      ],
       "isbn": "0307592642",
-      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/51JYkx8d8OL._SX333_BO1,204,203,200_.jpg"]
+      "imageUrls": [
+        "https://images-na.ssl-images-amazon.com/images/I/51JYkx8d8OL._SX333_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/I/31vIbe9R4qL.jpg",
+        "https://images-na.ssl-images-amazon.com/images/I/51JYkx8d8OL.jpg"
+      ],
+      "comments": [
+        {
+          "text": "Mmm, such a great book! I'd recommend it to anybody interested in ancient times!",
+          "timeStamp": "2016-11-28T11:00:00Z",
+          "user": {
+            "name": "Peter",
+            "profileUrl": "http://google.com"
+          }
+        },
+        {
+          "text": "Disguisting!",
+          "timeStamp": "2016-11-29T12:05:00Z",
+          "user": {
+            "name": "John",
+            "profileUrl": "http://goodreads.com/profile/12442"
+          }
+        }
+      ]
     },
     {
       "title": "Barbarian Days: A Surfing Life",
@@ -36,9 +69,13 @@
       "releaseYear": 2016,
       "author": "William Finnegan",
       "language": "en",
-      "genres": ["sports & outdoors"],
+      "genres": [
+        "sports & outdoors"
+      ],
       "isbn": "1594203474",
-      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/51IxXaOnirL._SX324_BO1,204,203,200_.jpg"]
+      "imageUrls": [
+        "https://images-na.ssl-images-amazon.com/images/I/51IxXaOnirL._SX324_BO1,204,203,200_.jpg"
+      ]
     },
     {
       "title": "StrengthsFinder 2.0",
@@ -46,9 +83,13 @@
       "releaseYear": 2007,
       "author": "Tom Rath",
       "language": "en",
-      "genres": ["business & money"],
+      "genres": [
+        "business & money"
+      ],
       "isbn": "9781595620156",
-      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/41EII0L2ciL._SX360_BO1,204,203,200_.jpg"]
+      "imageUrls": [
+        "https://images-na.ssl-images-amazon.com/images/I/41EII0L2ciL._SX360_BO1,204,203,200_.jpg"
+      ]
     },
     {
       "title": "Who Moved My Cheese?: An Amazing Way to Deal with Change in Your Work and in Your Life",
@@ -56,9 +97,13 @@
       "releaseYear": 1998,
       "author": "Spencer Johnson",
       "language": "en",
-      "genres": ["business & money"],
+      "genres": [
+        "business & money"
+      ],
       "isbn": "0399144463",
-      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/51fFDEkUyEL._SX321_BO1,204,203,200_.jpg"]
+      "imageUrls": [
+        "https://images-na.ssl-images-amazon.com/images/I/51fFDEkUyEL._SX321_BO1,204,203,200_.jpg"
+      ]
     },
     {
       "title": "Good to Great: Why Some Companies Make the Leap and Others Don't ",
@@ -66,10 +111,13 @@
       "releaseYear": 2001,
       "author": "Jim Collins",
       "language": "en",
-      "genres": ["business & money"],
+      "genres": [
+        "business & money"
+      ],
       "isbn": "0066620996",
-      "imageUrls": ["https://images-na.ssl-images-amazon.com/images/I/41EV9hbgbCL._SX327_BO1,204,203,200_.jpg"]
+      "imageUrls": [
+        "https://images-na.ssl-images-amazon.com/images/I/41EV9hbgbCL._SX327_BO1,204,203,200_.jpg"
+      ]
     }
-
   ]
 }

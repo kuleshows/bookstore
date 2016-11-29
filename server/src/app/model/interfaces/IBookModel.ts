@@ -1,6 +1,6 @@
 import mongoose = require("mongoose");
 import IBookRating = require("./IBookRatingModel");
-import IBookComment = require("./IBookCommentModel");
+import IBookReview = require("./IBookReviewModel");
 
 interface IBookModel extends mongoose.Document {
     title: string;
@@ -11,7 +11,7 @@ interface IBookModel extends mongoose.Document {
     genres: string[];
     isbn: string;
     ratings: IBookRating[];
-    comments: IBookComment[];
+    comments: IBookReview[];
     imageUrls: string[];
 }
 

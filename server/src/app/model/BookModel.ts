@@ -1,6 +1,6 @@
 import IBookModel = require('./interfaces/IBookModel');
 import IBookRating = require('./interfaces/IBookRatingModel');
-import IBookComment = require('./interfaces/IBookCommentModel');
+import IBookReview = require('./interfaces/IBookReviewModel');
 
 class BookModel  {
     private _bookModel: IBookModel;
@@ -37,7 +37,7 @@ class BookModel  {
         return this._bookModel.ratings;
     }
 
-    get comments(): IBookComment[] {
+    get comments(): IBookReview[] {
         return this._bookModel.comments;
     }
 
